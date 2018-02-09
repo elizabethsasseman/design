@@ -1,0 +1,337 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,500,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amiri:400,700" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hell Week App</title>
+  <style type="text/css">
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+       v2.0 | 20110126
+       License: none (public domain)
+    */
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+      display: block;
+    }
+    body {
+      line-height: 1;
+    }
+    ol, ul {
+      list-style: none;
+    }
+    blockquote, q {
+      quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+      content: '';
+      content: none;
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+
+
+
+/* my styling */
+
+
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Amiri', serif;
+        font-weight: 400;
+    }
+    .flex_container {
+        display: flex;
+        background-color: #222222;
+        width: 100%;
+        color: #222222;
+    }
+
+
+/* navigation */
+
+
+    .navigation {
+        width: 25%;
+        margin: auto;
+        text-align: center;
+        position: fixed;
+        padding-top: 100px;
+        color: white;
+        font-weight: 400;
+        font-family: 'Alegreya Sans', sans-serif;
+        line-height: 40px;
+    }
+    .nav {
+        list-style: none;
+        margin: 0;
+        line-height: 45px;
+    }
+    @media only screen and (max-width: 850px) {
+      .navigation {
+        background-color: #222222;
+        padding: 3vw;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        position: fixed;
+        color: white;
+        font-weight: 400;
+        font-family: 'Alegreya Sans', sans-serif;
+        line-height: 1vw;
+    }
+    .nav__item {
+      display: inline;
+      }
+    }
+    .nav__item--active a {
+      font-weight: 700;
+    }
+    a {
+    color: white;
+    text-decoration: none;
+    font-size: 2vw;
+    }
+    a:visited {
+        color: white;
+    }
+    a:hover, a:focus {
+        font-size: 2.1vw;
+    }
+
+/* projects structure */
+
+    .title {
+      font-weight: 100;
+      font-size: 5vw;
+      line-height: 120px;
+    }
+    @media only screen and (max-width: 850px) {
+      .title {
+      padding-top: 2vw;
+      line-height: 1vw;
+      }
+    }
+    .right {
+      width: 75%;
+      float: right;
+      margin-left: auto; 
+    }
+    @media only screen and (max-width: 850px) {
+      .right {
+      width: 100%;
+      padding-top: 30%;
+      margin-left: auto; 
+      background-color: white;
+      font-size: 4vw;
+      }
+    }
+
+
+/* start projects */
+
+    .headings {
+      font-size: 5vw;
+      text-align: center;
+      font-family: 'Alegreya Sans', sans-serif;
+      font-weight: 100;
+    }
+    @media only screen and (max-width: 850px) {
+      .headings {
+      font-size: 10vw;
+      text-align: center;
+      font-family: 'Alegreya Sans', sans-serif;
+      font-weight: 100;
+      }
+    }
+    .block01 {
+      background-color: white;
+      text-align: center;
+      padding: 200px;
+      font-size: 400%;
+      font-weight: 900;
+      font-family: 'Alegreya Sans', sans-serif;
+    }
+    @media only screen and (max-width: 850px) {
+      .block01 {
+        background-color: white;
+        text-align: center;
+        padding: 15%;
+        font-size: 10vw; 
+        font-weight: 900;
+        font-family: 'Alegreya Sans', sans-serif;
+      }
+    }
+    .intro {
+      font-size: 50%;
+      font-weight: 400;
+      line-height: 140%;
+      font-family: 'Amiri', serif;
+      font-weight: 400;
+      text-align: left;
+    }
+    @media only screen and (max-width: 850px) {
+      .intro {
+        font-size: 4vw;
+        font-weight: 400;
+        line-height: 140%;
+        font-family: 'Amiri', serif;
+        font-weight: 400;
+        text-align: left;
+      }
+    }
+    .block03 {
+      background-color: #222222;
+      color: white;
+      padding: 170px;
+      text-align: left;
+      font-weight: 400;
+      line-height: 140%;
+      font-size: 140%;
+    }
+    @media only screen and (max-width: 850px) {
+      .block03 {
+        background-color: #222222;
+        color: white;
+        padding: 15%;
+        text-align: left;
+        font-weight: 400;
+        line-height: 140%;
+      }
+    }
+
+
+
+
+
+
+
+    .footer {
+      background-color: #f3f3f3;
+      width: 100%;
+      text-align: center;
+      color: #848484;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      font-family: 'Alegreya Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+    }
+    @media only screen and (max-width: 850px) {
+      .footer {
+      background-color: #f3f3f3;
+      width: 100%;
+      text-align: center;
+      color: #848484;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      font-family: 'Alegreya Sans', sans-serif;
+      font-size: 2.5vw;
+      font-weight: 300;
+      }
+    }
+
+
+
+  </style>
+
+</head>
+
+
+
+
+
+
+
+
+
+<body>
+
+<div class= "flex_container">
+    <div class= "navigation">
+        <a href="index.html"><img src="Logo.png" style="width: 15vw" alt="Logo"/></a>
+          <div class= "title">
+            <h1>Projects</h1>
+          </div>
+       <nav>
+          <ul class="nav">
+          <li class="nav__item nav__item--active"><a href="project01.html">Hell Week App</a></li>
+          <li class="nav__item"><a href="project02.html">Spotify Link Feature</a></li>
+          <li class="nav__item"><a href="project03.html">Legal Doc Platform</a></li>
+          </ul>
+        </nav>
+    </div>
+
+<!-- content -->
+
+    <div class= "right">
+        <div class= "block01">
+            Hell Week App
+            <div class="intro">
+              </br><p>My friend, Quinn came to me with his website titled, Golden Hell Week. He told me about his sites current functionality as well as his idea for an app feature he wanted to incorporate somewhere on his site. </p></br><p> Upon discussing Quinn's app idea with him and taking a closer look at the current functionality and interface of the website, I told him an entire website re-design would be beneficial and would help incorporate the app feature smoother. He agreed to let me work out the kinks and design something that would allow for expansion of his product in the future.
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class= "block03">
+            MORE COMING SOON!
+        </div>
+
+
+
+
+
+          <div class="footer">
+            Website design, content and imagery by: Elizabeth Sasseman
+          </div>
+      </div>
+  </div>
+
+ 
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
