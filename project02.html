@@ -65,7 +65,6 @@
 
 
     body {
-        margin: 0;
         padding: 0;
         font-family: 'Amiri', serif;
         font-weight: 400;
@@ -83,7 +82,6 @@
 
     .navigation {
         width: 25%;
-        margin: auto;
         text-align: center;
         position: fixed;
         padding-top: 100px;
@@ -92,26 +90,28 @@
         font-family: 'Alegreya Sans', sans-serif;
         line-height: 40px;
     }
-    .nav {
-        list-style: none;
-        margin: 0;
-        line-height: 45px;
-    }
     @media only screen and (max-width: 850px) {
       .navigation {
         background-color: #222222;
         padding: 3vw;
         width: 100%;
-        margin: auto;
-        text-align: center;
-        position: fixed;
-        color: white;
         font-weight: 400;
-        font-family: 'Alegreya Sans', sans-serif;
         line-height: 1vw;
+        position: absolute;
+      }
     }
-    .nav__item {
-      display: inline;
+    .nav {
+        list-style: none;
+    }
+    @media only screen and (max-width: 850px) {
+      .nav {
+        margin-top: 4vw;
+      }
+    }
+    @media only screen and (max-width: 850px) {
+      .nav__item {
+        display: inline;
+        margin-right: 2vw;
       }
     }
     .nav__item--active a {
@@ -120,13 +120,13 @@
     a {
     color: white;
     text-decoration: none;
-    font-size: 2vw;
+    font-size: 2.2vw;
     }
     a:visited {
         color: white;
     }
     a:hover, a:focus {
-        font-size: 2.1vw;
+        font-size: 2.3vw;
     }
 
 /* projects structure */
@@ -138,14 +138,15 @@
     }
     @media only screen and (max-width: 850px) {
       .title {
-      padding-top: 2vw;
+      padding-top: 3vw;
       line-height: 1vw;
       }
     }
     .right {
       width: 75%;
       float: right;
-      margin-left: auto; 
+      margin-left: auto;
+      font-size: 140%;
     }
     @media only screen and (max-width: 850px) {
       .right {
@@ -153,7 +154,7 @@
       padding-top: 30%;
       margin-left: auto; 
       background-color: white;
-      font-size: 4vw;
+      font-size: 3vw;
       }
     }
 
@@ -169,46 +170,38 @@
     @media only screen and (max-width: 850px) {
       .headings {
       font-size: 10vw;
-      text-align: center;
-      font-family: 'Alegreya Sans', sans-serif;
-      font-weight: 100;
+      line-height: 10vw;
       }
     }
     .block01 {
       background-color: white;
       text-align: center;
-      padding: 200px;
-      font-size: 400%;
+      padding: 15vw;
       font-weight: 900;
       font-family: 'Alegreya Sans', sans-serif;
+      font-size: 5vw;
     }
     @media only screen and (max-width: 850px) {
       .block01 {
-        background-color: white;
-        text-align: center;
         padding: 15%;
-        font-size: 10vw; 
-        font-weight: 900;
-        font-family: 'Alegreya Sans', sans-serif;
+        font-size: 7vw;
       }
     }
     .intro {
-      font-size: 50%;
       font-weight: 400;
       line-height: 140%;
       font-family: 'Amiri', serif;
       font-weight: 400;
       text-align: left;
+      font-size: 40%;
     }
     @media only screen and (max-width: 850px) {
       .intro {
-        font-size: 4vw;
-        font-weight: 400;
-        line-height: 140%;
-        font-family: 'Amiri', serif;
-        font-weight: 400;
-        text-align: left;
+        font-size: 3vw;
       }
+    }
+    .block02 {
+      background-color: #222222
     }
     .block03 {
       background-color: #222222;
@@ -217,20 +210,88 @@
       text-align: left;
       font-weight: 400;
       line-height: 140%;
-      font-size: 140%;
     }
     @media only screen and (max-width: 850px) {
       .block03 {
-        background-color: #222222;
-        color: white;
         padding: 15%;
-        text-align: left;
-        font-weight: 400;
-        line-height: 140%;
       }
     }
-
-
+    .block04 {
+      background-color: white;
+    }
+    .block05 {
+      background-color: white;
+      padding: 170px;
+      text-align: left;
+      font-weight: 400;
+      line-height: 140%;
+    }
+    @media only screen and (max-width: 850px) {
+      .block05 {
+        padding: 15%;
+      }
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 8%;
+    }
+    .block06 {
+      background-color: white;
+      padding-top: 170px;
+      padding-left: 170px;
+      padding-right: 170px;
+      text-align: left;
+      font-weight: 400;
+      line-height: 140%;
+    }
+    @media only screen and (max-width: 850px) {
+      .block06 {
+        padding-top: 15%;
+        padding-left: 15%;
+        padding-right: 15%;
+        text-align: left;
+      }
+    }
+    .block07 {
+      background-color: white;
+      padding-bottom: 170px;
+      padding-left: 170px;
+      padding-right: 170px;
+      text-align: left;
+      font-weight: 400;
+      line-height: 140%;
+    }
+    @media only screen and (max-width: 850px) {
+      .block07 {
+        padding-bottom: 15%;
+        padding-left: 15%;
+        padding-right: 15%;
+      }
+    }
+    .block08 {
+      text-align: center;
+      background-color: white;
+      padding-top: 170px;
+      padding-left: 170px;
+      padding-right: 170px;
+    }
+    @media only screen and (max-width: 850px) {
+      .block08 {
+        padding-top: 15%;
+        padding-left: 15%;
+        padding-right: 15%;
+      }
+    }
+    .block09 {
+      text-align: center;
+      background-color: white;
+      padding: 20px;
+    }
+    @media only screen and (max-width: 850px) {
+      .block09 {
+        padding: 5%;
+      }
+    }
 
 
 
@@ -247,18 +308,13 @@
       font-family: 'Alegreya Sans', sans-serif;
       font-size: 15px;
       font-weight: 300;
+      line-height: 140%;
     }
     @media only screen and (max-width: 850px) {
       .footer {
-      background-color: #f3f3f3;
-      width: 100%;
-      text-align: center;
-      color: #848484;
       padding-top: 5%;
       padding-bottom: 5%;
-      font-family: 'Alegreya Sans', sans-serif;
       font-size: 2.5vw;
-      font-weight: 300;
       }
     }
 
@@ -305,16 +361,194 @@
 
 
 
+        <div class= "block02">
+            <img src="headphones.jpg" width="100%" alt="iPhone"/>
+        </div>
+
+
+
         <div class= "block03">
-            MORE COMING SOON!
+            <p>I knew there had to be a way to keep songs with multiple parts together even when a playlist is shuffled.</p></br><p> Let me explain what I mean by songs with multiple parts. Check out the Spotify screenshots below:</p>
+        </div>
+
+
+
+        <div class= "block02">
+            <img src="song01.png" width="33.33%" alt="Spotify Screenshot"/><img src="song02.png" width="33.33%" alt="Spotify Screenshot"/><img src="song03.png" width="33.33%" alt="Spotify Screenshot"/>
+        </div>
+
+
+
+        <div class= "block03">
+            <p>I used an example of a classic song, Fly Like An Eagle by Steve Miller Band. You can see that Space Intro and Fly Like An Eagle are split into two parts, even though together they make up one very popular song. My guess is that there are a lot of people who don't care to listen to the Space Intro part of Fly Like An Eagle every time they listen to the song, so it make sense Spotify has kept these parts separate. But if someone - who does want to listen to both parts together as the complete song that it is - adds both parts to a playlist they intend on shuffling, I'm certain most people like me will be frustrated when both parts don't play together or in the right order. </p></br><p> There are a lot of songs split into multiple parts like this that I've found on Spotify. My goal was to design a feature that would allow users the option to play these parts together as one song and in the right order, even when a playlist is shuffled.</p>
+        </div>
+
+
+
+        <div class= "block04">
+            <img src="phone02.jpeg" width="100%" alt="iPhone"/>
+        </div>
+
+
+
+        <div class="block05">
+          <div class="headings">
+            Brainstorm
+          </div>
+        </br></br><p>I wanted to design a feature that would function seamlessly with Spotify's current features. This seemed like a crucial constraint if I wanted to eventually present my idea to Spotify. </p></br><p> I also wanted to allow users the choice to not link, link, unlink or re-link parts are often or little as they wanted. I knew allowing as much flexibility as possible would be necessary in order to please each type of user. </p></br><p> Below are some initial questions I began considering: </p></br><p>
+        <ul>
+          <li>Should there be a limit in the number of parts that can be linked? What would happen if someone tried to link thousands of songs?</li>
+          <li>Should it be possible to unlink one part at a time or will unlinking one part unlink all parts?</li>
+          <li>Does each linked part need to be on the same playlist or album in order to play as a linked group of parts?</li>
+          <li>Will parts remain linked if the playlist these parts are on is deleted?</li>
+          <li>Are linked parts on a collaborative playlist linked for all users who have access to that playlist? Should that option exist?</li>
+          <li>If three parts are linked and on a shuffled playlist, will they exist in the randomized queue once or three times?</li>
+        </ul>
+        </div>
+
+
+
+        <div class= "block04">
+            <img src="research01.jpeg" width="100%" alt="iPhone"/>
+        </div>
+
+
+
+        <div class= "block06">
+          <div class="headings">
+            Discuss & Research
+          </div>
+        </br></br><p>I described my idea to several friends and asked if they thought the ability to link parts of songs in Spotify would be useful. Everyone felt like it would be a beneficial feature, but most of them hadn't actually run into a situation where they wished the ability to link parts existed. I decided to create a poll in one of my Instagram stories to get a few more responses. <p></br><p> Below are screenshots of my Instagram poll:
+        </div>
+
+
+
+        <div class= "block04">
+            <img src="poll01.png" width="33.33%" alt="Spotify Screenshot"/><img src="poll02.png" width="33.33%" alt="Spotify Screenshot"/><img src="poll03.png" width="33.33%" alt="Spotify Screenshot"/>
+        </div>
+
+
+
+        <div class= "block07">
+        <p> Based on my poll, 86% of the 22 people who responded feel like the ability to link parts of songs should be possible. </p></br><p> There are over 140 million active monthly Spotify users, according to a simple Google search. Although my poll reached an extremely small sample of this population, I wanted to design this feature regardless of how many Spotify users shared in my frustration. If I owned or worked for Spotify, I'd choose to use Spotify's user data to research how marketable this feature would realistically be. But my goal was to present this idea to Spotify and to let them take it from there.</p>
         </div>
 
 
 
 
 
+        <div class= "block04">
+            <img src="music.jpeg" width="100%" alt="Wireframe Sketch">
+        </div>
+
+
+
+
+
+        <div class="block05">
+          <div class="headings">
+            Design
+          </div>
+          </br></br><p>Below is an initial sketch using the current functionality of the mobile version of the Spotify app. My idea is to add the linking feature to the existing three dots which when tapped, opens up an array of options to choose from.
+        </div>
+
+
+
+
+
+        <div class= "block04">
+            <img src="wireframesketch.jpeg" width="100%" alt="Wireframe Sketch">
+        </div>
+
+
+
+
+
+
+        <div class="block05">
+          Below is a low-fidelity wireframe that is ready for prototyping.
+        </div>
+
+
+
+
+
+        <div class= "block04">
+            <img src="Wireframe02.jpg" width="100%" alt="Low-Fidelity Wireframe"/>
+        </div>
+
+
+
+
+        <div class= "block04">
+            <img src="sitemap.jpeg" width="100%" alt="Wireframe Sketch">
+        </div>
+
+
+
+
+        <div class="block06">
+          <div class="headings">
+            Prototype
+          </div>
+          </br></br><p>I decided to build a very simple and easy-to-understand prototype. My initial presentation to Spotify would need to remain short and sweet. This would not be the case if I were part of Spotify's design team. But because I'm not, the goal was to get the message of my idea across very quickly and without them having to ask too many questions in order to understand my idea. For this reason, I would not send over any detailed wireframes or sketches. Just a simple prototype that could be presented visually on a sell sheet. </p></br><p> Below is my prototype visual.
+        </div>
+
+
+
+
+        <div class= "block04">
+            <img src="prototype.png" width="100%" alt="Wireframe Sketch">
+        </div>
+
+
+
+
+
+
+        <div class= "block03">
+            <p>My final task was to create a sell sheet. This included a one-line benefit statement as well as my prototype visual. </p></br><p> The goal of this sell sheet was to concisely present my idea while also portraying its functionality. </p></br><p> Below is my sell sheet.
+        </div>
+
+
+
+
+
+        <div class="block06">
+          <div class="headings">
+            Present
+          </div>
+        </div>
+
+
+
+
+        <div class= "block08">
+            <img src="sellsheetforportfolio.png" width="70%" alt="Wireframe Sketch">
+        </div>
+
+
+
+
+        <div class="block05">
+          I first searched Spotify's website to see if I could find a phone number to call. I was unable to find a phone number, but instead led to a community page with a section on idea submissions. Because I was not looking for any compensation with this idea, I decided I would present my sell sheet within the ideas area. </p></br><p> After posting my idea, I decided to browse around and see whether any other users had come up with the same idea as me. Sure enough, one other user had submitted a similar idea in 2015. And about a year ago, someone from Spotify commented on this users post saying that this idea would go into the "Not Right Now" pile because they had no plans to implement it, but that it might be up for consideration eventually. </p></br><p> This seemed to be the end of the road for me and this idea for the time being. But I'd happily await a response on my post and see if anything comes of it! </p></br><p> You can see the screenshots of my post and the other users post below.
+        </div>
+
+
+
+
+
+        <div class= "block09">
+            <img src="final01.png" width="70%" alt="Wireframe Sketch">
+            <img src="final02.png" width="70%" alt="Wireframe Sketch">
+            <img src="final03.png" width="70%" alt="Wireframe Sketch">
+        </div>
+
+
+
+
           <div class="footer">
-            Website design, content and imagery by: Elizabeth Sasseman
+            Website design, content and design-related imagery by: Elizabeth Sasseman </br> Stock photos from pexels.com
           </div>
       </div>
   </div>
