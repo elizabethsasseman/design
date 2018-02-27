@@ -84,7 +84,7 @@
         width: 25%;
         text-align: center;
         position: fixed;
-        padding: 100px 3vw 3vw 0;
+        padding-top: 100px;
         color: white;
         font-weight: 400;
         font-family: 'Alegreya Sans', sans-serif;
@@ -102,6 +102,7 @@
     }
     .nav {
         list-style: none;
+        margin: 0;
     }
     @media only screen and (max-width: 850px) {
       .nav {
@@ -166,7 +167,7 @@
       text-align: center;
       font-family: 'Alegreya Sans', sans-serif;
       font-weight: 100;
-      line-height: 100%;
+      line-height: 5vw;
     }
     @media only screen and (max-width: 850px) {
       .headings {
@@ -201,6 +202,9 @@
         font-size: 3vw;
       }
     }
+    .block02 {
+      background-color: #222222
+    }
     .block03 {
       background-color: #222222;
       color: white;
@@ -214,6 +218,49 @@
         padding: 15%;
       }
     }
+    .block04 {
+      background-color: white;
+    }
+    .block05 {
+      background-color: white;
+      padding: 170px;
+      text-align: left;
+      font-weight: 400;
+      line-height: 140%;
+    }
+    @media only screen and (max-width: 850px) {
+      .block05 {
+        padding: 15%;
+      }
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 8%;
+    }
+    .block06 {
+      background-color: white;
+      padding-left: 170px;
+      padding-right: 170px;
+      padding-top: 100px;
+      padding-bottom: 40px;
+      text-align: left;
+      font-weight: 400;
+      line-height: 140%;
+    }
+    @media only screen and (max-width: 850px) {
+      .block06 {
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-top: 10%;
+        padding-bottom: 5%;
+      }
+    }
+
+
+
+
+
+
 
 
 
@@ -236,9 +283,9 @@
     }
     @media only screen and (max-width: 850px) {
       .footer {
-      padding-top: 5%;
-      padding-bottom: 5%;
-      font-size: 2.5vw;
+      padding-top: 3%;
+      padding-bottom: 3%;
+      font-size: 10px;
       }
     }
 
@@ -260,7 +307,7 @@
 
 <div class= "flex_container">
     <div class= "navigation">
-        <a href="index.html"><img src="Logo.png" style="width: 15vw" alt="Logo"/></a>
+        <a href="index.html"><img src="Logo.png" style="width: 15vw" alt="photo of Elizabeth"/></a>
           <div class= "title">
             <h1>Projects</h1>
           </div>
@@ -268,7 +315,7 @@
           <ul class="nav">
           <li class="nav__item nav__item--active"><a href="project01.html">Hell Week App</a></li>
           <li class="nav__item"><a href="project02.html">Spotify Link Feature</a></li>
-          <li class="nav__item"><a href="project03.html">Legal Doc Platform</a></li>
+          <li class="nav__item"><a href="project03.html">Legal App Platform</a></li>
           </ul>
         </nav>
     </div>
@@ -279,13 +326,218 @@
         <div class="block01">
             Hell Week App
             <div class="intro">
-              </br><p>My friend, Quinn came to me with his website titled, Golden Hell Week. He told me about his sites current functionality as well as his idea for an app feature he wanted to incorporate somewhere on his site. </p></br><p> Upon discussing Quinn's app idea with him and taking a closer look at the current functionality and interface of the website, I told him an entire website re-design would be beneficial and would help incorporate the app feature smoother. He agreed to let me work out the kinks and design something that would allow for expansion of his product in the future.
+              </br><p>My friend, Quinn Carrasco came to me with his website for his Golden Hell Week running event. He told me about an idea he had for a feature he wanted to add to his website. </p></br><p> Upon discussing Quinn's app idea with him and taking a closer look at his website's current functionality and its interface, I told him an entire website re-design would be beneficial and would help incorporate the feature he wanted to add smoother. </p></br><p>He agreed to let me work out the kinks and design something that would be easier to navigate as well as allow for expansion of his event in the future.</p></br><p>This website is still in development.</p>
             </div>
         </div>
 
-        <div class= "block03">
-            <p>MORE COMING SOON!
+
+
+        <div class= "block02">
+            <img src="website.jpeg" width="100%" alt="laptop with coffee"/>
         </div>
+
+
+
+        <div class= "block03">
+            You can view Quinn's website <a href="https://www.goldenhellweek.com/">here</a>. It is currently his old website.
+        </div>
+
+
+
+        <div class= "block02">
+            <img src="trailrun01.jpg" width="100%" alt="person running on a trail in the mountains"/>
+        </div>
+
+
+
+        <div class= "block03">
+            <p>Golden Hell Week is an unofficial, week-long trail running event that takes place the last week of October every year in Golden, Colorado. Quinn started this event in 2016. </p></br><p> There are five different challenging trail running routes participants have to complete during Golden Hell Week. They can complete them in any order or at any time so long as they do so within the specified 5-day period. Whichever participant's combined times for these 5 runs is fastest, wins. </p></br><p> Routes that participants are supposed to run during Golden Hell Week can be viewed through a popular app called, Strava. This app records each participant's distance run, their finish time and whether they ran the correct route. </p></br><p>Currently, Quinn has been manually entering runner's Strava data from Golden Hell Week into an Excel document which he then made viewable on his website. Because of the inconvenience of having to manually enter this data, Quinn wanted to use an API to pull the Strava data into his own website. This would allow him to build an interactive feature within his site that would keep track of participant's Strava data for him without the need to enter it manually. </p></br><p> Below are screenshots of the mobile version of Quinn's website before a re-design.</p>
+        </div>
+
+
+
+
+        <div class= "block02">
+            <img src="01.png" width="16.66%" alt="mobile screenshot"/><img src="02.png" width="16.66%" alt="mobile screenshot"/><img src="03.png" width="16.66%" alt="mobile screenshot"/><img src="04.png" width="16.66%" alt="mobile screenshot"/><img src="05.png" width="16.66%" alt="mobile screenshot"/><img src="06.png" width="16.66%" alt="mobile screenshot"/><img src="07.png" width="16.66%" alt="mobile screenshot"/><img src="08.png" width="16.66%" alt="mobile screenshot"/><img src="09.png" width="16.66%" alt="mobile screenshot"/><img src="10.png" width="16.66%" alt="mobile screenshot"/><img src="11.png" width="16.66%" alt="mobile screenshot"/><img src="12.png" width="16.66%" alt="mobile screenshot"/>
+        </div>
+
+
+
+
+
+        <div class= "block03">
+            <p>Below are screenshots of the desktop version of Quinn's website before a re-design.</p>
+        </div>
+
+
+
+
+
+        <div class= "block02">
+            <img src="d01.png" width="50%" alt="desktop screenshot"/><img src="d02.png" width="50%" alt="desktop screenshot"/><img src="d03.png" width="50%" alt="desktop screenshot"/><img src="d04.png" width="50%" alt="desktop screenshot"/><img src="d05.png" width="50%" alt="desktop screenshot"/><img src="d06.png" width="50%" alt="desktop screenshot"/><img src="d07.png" width="50%" alt="desktop screenshot"/><img src="d08.png" width="50%" alt="desktop screenshot"/><img src="d09.png" width="50%" alt="desktop screenshot"/><img src="d10.png" width="50%" alt="desktop screenshot"/><img src="d11.png" width="50%" alt="desktop screenshot"/><img src="d12.png" width="50%" alt="desktop screenshot"/>
+        </div>
+
+
+
+
+
+        <div class="block03">
+        </br></br><p>I felt both the mobile and desktop versions lack thoughtful design. There is no color theme, the fonts don't work well together and are too large when the phone is turned sideways, negative space lacks strategic placement, some information is cut off the side of the screen, and the title, "Golden Hell Week" doesn't draw me in.</p>
+        </div>
+
+
+
+
+
+
+        <div class= "block05">
+          <div class="headings">
+            Brainstorm
+          </div>
+        </br></br><p>Quinn initially asked me to design a way to integrate the Strava feature into his current website layout so that he could have a developer use my design to build it. But after talking with him, I explained why re-designing the entire website would be beneficial. </p></br><p> I began considering the possibilities for a re-design based on the future he saw with his annual event. He was already in the process of considering starting a "Golden Hell Week" in a couple other towns, and hoped to continue expanding in the years to come. </p></br><p> One of my immediate thoughts was to change the name from "Golden Hell Week" to "Hell Week" and to allow visitors of his site to choose which Hell Week they wanted to navigate to via a dropdown menu of Hell Weeks in different towns on the home page.</p>
+        </div>
+
+
+
+
+
+        <div class="block03">
+        </br></br><p>I wanted to think more about how I might organize this website before meeting with Quinn again. Below is a sitemap I sketched displaying the flow of the pages. </p>
+        </div>
+
+
+
+
+
+        <div class= "block04">
+            <img src="sitemapsketch.jpeg" width="100%" alt="my sitemap sketch"/>
+        </div>
+
+
+
+
+
+
+        <div class= "block05">
+          <div class="headings">
+            Discuss
+          </div>
+        </br></br><p>After talking with Quinn it sounded like he agreed that his website should exist as Hell Week with each location's Hell Week as a navigable page.</p>
+        </div>
+
+
+
+
+
+        <div class= "block04">
+            <img src="navigable.jpeg" width="100%" alt="people studying a map"/>
+        </div>
+
+
+
+
+
+
+
+        <div class= "block05">
+          <div class="headings">
+            Research
+          </div>
+        </br></br><p>Although Quinn had performed his own research prior to building his current website, I wanted to do a little more in order to find out what types of similar sites already exist and how they're laid out. I decided to browse through all sorts of race websites, running event websites and anything else I could find that might function in a similar way to Quinn's website. Luckily as a runner myself, I'd been to enough running-related event websites that I already had an idea of how they were laid out. This helped me avoid some of the logistical problems that might have come up otherwise.</p></br><p>Quinn and I already knew the small population of participants in Golden Hell Week. They are all close friends and trail runners. I told Quinn it would be beneficial to talk with participants who had been to Quinn's website in order to find out what other pain points exist. Quinn said he'd already done that but I decided to have a few of them look at it as well and get back to me with anything they felt lacked user friendliness. I also explained to Quinn that user testing throughout the design process can always help uncover remaining issues.</p></br><p>One last thing I wanted to do was learn more about how APIs work. As a designer, I know it's important to be able to communicate with everyone involved in building a product. If Quinn were to ask me to work with a developer in building his website, I'd want to be able to communicate my design ideas regarding the API to the developer. </p>
+        </div>
+
+
+
+
+
+        <div class= "block04">
+            <img src="trailrun02.jpg" width="100%" alt="girl running on a grassy mountaintop with sun setting"/>
+        </div>
+
+
+
+
+
+
+        <div class= "block05">
+          <div class="headings">
+            Analyze & Brainstorm
+          </div>
+        </br></br><p>Because Golden Hell Week is a small, unofficial event, Quinn isn't making any profit off of it. He puts it on every year simply because of how excited fellow trail runners around Golden are about it. But Quinn did say he has ideas for the future about turning it into something bigger and potentially profitable. Because of this I felt it was important to build a website that would "sell" even though he wasn't currently trying to actually sell anything. If Quinn wanted to continue to put his event on every year and turn it into something bigger down the road, the ability to draw trail runners in was important.</p>
+        </div>
+
+
+
+
+
+        <div class= "block04">
+            <img src="jump.jpeg" width="100%" alt="two people jumping with sunset in background"/>
+        </div>
+
+
+
+
+
+        <div class= "block05">
+          <div class="headings">
+            Design
+          </div>
+        </br></br><p>With this in mind, I really wanted to make sure I captured the vibe of Golden Hell Week within Quinn's website. Although I have not participated in Golden Hell Week myself yet, I knew it was brutal but based around a sense of community. </p></br><p> Quinn is also a huge part of the Golden Mountain Runners run club. A majority of runners who participate in Golden Hell Week also run with the Golden Mountain Runners. This group of people are very welcoming and psyched on trail running with one another. This is the group of people Quinn's website needed to speak emotionally to.</p></br><p>Below are a few sketches of ideas for the home page which would help set the tone for the rest of Quinn's website.</p>
+        </div>
+
+
+
+
+        <div class= "block02">
+            <img src="idea01.jpg" width="33.33%" alt="my sketch"/><img src="idea03.jpg" width="33.33%" alt="my sketch"/><img src="idea02.jpg" width="33.33%" alt="my sketch"/>
+        </div>
+
+
+
+
+        <div class= "block03">
+            <p>I decided to use the sketches above to build some mockups. You can view these below.</p>
+        </div>
+
+        <div class= "block06">
+            <p>Below are mobile and desktop mockups of one of my designs. I would encourage Quinn to have a logo made which would replace "Hell Week" at the top. I think the dark feel gives it the "brutal" vibe that describes how difficult Hell Week is. Hell Week is also the week of Halloween every year. The two aren't completely related, but Quinn did mention this as part of the excitement for people, so an orange color theme coupled with a dark color might interest Quinn.</p>
+        </div>
+        <div class= "block04">
+            <img src="hellweekhome01.png" width="100%" alt="first mockup"/>
+        </div>
+
+        <div class= "block06">
+            <p>Below is another idea for the home page. I used earthier colors that relate well to trail running.</p>
+        </div>
+        <div class= "block04">
+            <img src="hellweekhome02.png" width="100%" alt="second mockup"/>
+        </div>
+
+        <div class= "block06">
+            <p>My third idea is a bit for terrifying-looking than the other two. While keeping mobile-first in mind, I've included an extra sentence next to the hamburger on the desktop version that isn't on the mobile version. It will be important to find out what information Quinn feels is necessary on the home screen and what isn't.</p>
+        </div>
+        <div class= "block04">
+            <img src="hellweekhome03.png" width="100%" alt="third mockup"/>
+        </div>
+
+        <div class= "block03">
+            <p>I'm not sure whether Quinn will like the more sophisticated look of the first image or the more fun and illustrated look of the other two images. If he likes the idea of having a photo of a runner in the background like in the first image, I could use an actual photo from a previous year's Golden Hell Week or I would be willing to take some photos during this year's Golden Hell Week.</p>
+        </div>
+
+
+
+
+
+
+
+
+        <div class= "block05">
+          <div class="headings">
+            Prototype
+          </div>
+        </br></br><p>At this point it was time to talk with Quinn about my designs for his website. Once I got an okay, I would either build all of his website with the exception of the Strava API function, or he would hire someone to build the entire website for him.</p>
+        </div>
+
 
 
 
