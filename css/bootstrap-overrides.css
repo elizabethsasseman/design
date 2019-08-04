@@ -57,6 +57,14 @@
   background-color: #282828 !important;
 }
 
+.bg-dark02 {
+  background-color: #383838 !important;
+}
+
+.bg-dark03 {
+  background-color: #484848 !important;
+}
+
 .btn, .btn-group-lg {
   border-radius: 0;
 }
