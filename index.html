@@ -1,434 +1,376 @@
 <!doctype html>
-
 <html lang="en">
-<head>
-  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,500,700,800,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Amiri:400,700" rel="stylesheet">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <meta property="og:site_name" content="Elizabeth Sasseman Design"/>
-  <meta property="og:title" content="I create strong but simple interactions with technology by designing eye-catching interfaces and intuitive functionality."/>
-  <meta property="og:url" content="http://elizabethsassemandesign.com/">
-  <meta property="og:type" content="portfolio"/>
-  <meta property="og:image" content="Logo.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-overrides.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya:400,500,700,800,900|Aleo:300,400,700|Cabin:400,500,600,700|Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
-
-
-
-
-  <title>Elizabeth Sasseman</title>
-  <style type="text/css">
-    /* http://meyerweb.com/eric/tools/css/reset/
-       v2.0 | 20110126
-       License: none (public domain)
-    */
-
-    html, body, div, span, applet, object, iframe,
-    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-    a, abbr, acronym, address, big, cite, code,
-    del, dfn, em, img, ins, kbd, q, s, samp,
-    small, strike, strong, sub, sup, tt, var,
-    b, u, i, center,
-    dl, dt, dd, ol, ul, li,
-    fieldset, form, label, legend,
-    table, caption, tbody, tfoot, thead, tr, th, td,
-    article, aside, canvas, details, embed,
-    figure, figcaption, footer, header, hgroup,
-    menu, nav, output, ruby, section, summary,
-    time, mark, audio, video {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      font-size: 100%;
-      font: inherit;
-      vertical-align: baseline;
-    }
-    /* HTML5 display-role reset for older browsers */
-    article, aside, details, figcaption, figure,
-    footer, header, hgroup, menu, nav, section {
-      display: block;
-    }
-    body {
-      line-height: 1;
-    }
-    ol, ul {
-      list-style: none;
-    }
-    blockquote, q {
-      quotes: none;
-    }
-    blockquote:before, blockquote:after,
-    q:before, q:after {
-      content: '';
-      content: none;
-    }
-    table {
-      border-collapse: collapse;
-      border-spacing: 0;
-    }
+    <title>Elizabeth Sasseman Design</title>
+  </head>
+  <body>
 
 
-
-
-/* my styling */
-
-
-
-    body {
-        padding: 0;
-        font-family: 'Amiri', serif;
-        font-weight: 400;
-    }
-    .flex_container {
-        display: flex;
-        background-color: #222222;
-        width: 100%;
-        color: #222222;
-    }
-
-
-/* navigation */
-
-
-    .navigation {
-        width: 25%;
-        text-align: center;
-        position: fixed;
-        padding-top: 100px;
-        color: white;
-        font-weight: 400;
-        font-family: 'Alegreya Sans', sans-serif;
-        line-height: 40px;
-    }
-    @media only screen and (max-width: 850px) {
-      .navigation {
-        background-color: #222222;
-        padding: 3vw 3vw 3vw 0;
-        width: 100%;
-        font-weight: 400;
-        line-height: 1vw;
-        position: absolute;
-      }
-    }
-    .nav {
-        list-style: none;
-    }
-    @media only screen and (max-width: 850px) {
-      .nav {
-        margin-top: 4vw;
-      }
-    }
-    @media only screen and (max-width: 850px) {
-      .nav__item {
-        display: inline;
-        margin-right: 2vw;
-      }
-    }
-    .nav__item--active a {
-      font-weight: 700;
-    }
-    a {
-    color: white;
-    text-decoration: none;
-    font-size: 2.2vw;
-    }
-    a:visited {
-        color: white;
-    }
-    a:hover, a:focus {
-        font-size: 2.3vw;
-    }
-
-/* projects structure */
-
-    .title {
-      font-weight: 100;
-      font-size: 5vw;
-      line-height: 120px;
-    }
-    @media only screen and (max-width: 850px) {
-      .title {
-      padding-top: 3vw;
-      line-height: 1vw;
-      }
-    }
-    .right {
-      width: 75%;
-      float: right;
-      margin-left: auto;
-    }
-    @media only screen and (max-width: 850px) {
-      .right {
-      width: 100%;
-      padding-top: 30%;
-      margin-left: auto;
-      background-color: white;
-      font-size: 2.2vw;
-      }
-    }
-
-
-/* start projects */
-
-    .headings {
-      font-size: 6.5vw;
-      text-align: center;
-      font-family: 'Alegreya Sans', sans-serif;
-      font-weight: 700;
-      line-height: 5vw;
-    }
-    @media only screen and (max-width: 850px) {
-      .headings {
-      font-size: 10vw;
-      line-height: 10vw;
-      }
-    }
-    .content {
-      font-size: 2vw;
-      text-align: center;
-      font-weight: 300;
-      font-family: 'Alegreya Sans', sans-serif;
-      font-weight: 400;
-    }
-    @media only screen and (max-width: 850px) {
-      .content {
-        font-size: 5vw;
-        line-height: 6.5vw;
-      }
-    }
-    .block01 {
-      background-color: white;
-      padding: 170px;
-      text-align: justify;
-      font-weight: 400;
-      line-height: 140%;
-      font-size: 140%;
-    }
-    @media only screen and (max-width: 850px) {
-      .block01 {
-        padding: 15%;
-      }
-    }
-    .block03 {
-      background-color: #222222;
-      color: white;
-      padding: 170px;
-      text-align: center;
-      font-weight: 400;
-      line-height: 140%;
-      font-size: 140%;
-    }
-    @media only screen and (max-width: 850px) {
-      .block03 {
-        padding: 15%;
-      }
-    }
-    .block04 {
-      background-color: white;
-      padding: 170px;
-      text-align: center;
-      font-weight: 400;
-      line-height: 140%;
-      font-size: 140%;
-    }
-    @media only screen and (max-width: 850px) {
-      .block04 {
-        padding: 15%;
-      }
-    }
-    .block05 {
-      background-color: white;
-    }
-    .block08 {
-      background-color: white;
-      padding-bottom: 170px;
-      padding-top: 170px;
-      text-align: center;
-    }
-    @media only screen and (max-width: 850px) {
-      .block08 {
-        padding-bottom: 15%;
-        padding-top: 15%;
-      }
-    }
-    .block09 {
-      background-color: #222222;
-      color: white;
-      padding: 170px;
-      text-align: justify;
-      font-weight: 400;
-      line-height: 140%;
-      font-size: 140%;
-    }
-    @media only screen and (max-width: 850px) {
-      .block09 {
-        padding: 15%;
-      }
-    }
-
-
-
-
-
-
-
-
-
-    .footer {
-      background-color: #f3f3f3;
-      width: 100%;
-      text-align: center;
-      color: #848484;
-      padding-top: 2%;
-      padding-bottom: 2%;
-      font-family: 'Alegreya Sans', sans-serif;
-      font-size: 15px;
-      font-weight: 300;
-      line-height: 140%;
-    }
-    @media only screen and (max-width: 850px) {
-      .footer {
-      padding-top: 3%;
-      padding-bottom: 3%;
-      font-size: 10px;
-      }
-    }
-
-
-
-
-
-
-
-
-  </style>
-
-</head>
-
-
-
-
-
-
-
-
-
-<body>
-
-<div class= "flex_container">
-    <div class= "navigation">
-        <a href="index.html"><img src="Logo.png" style="width: 15vw" alt="photo of Elizabeth"/></a>
-          <!-- <div class= "title">
-            <h1>Projects coming soon!</h1>
-          </div> -->
-          <div class= "content">
-            <h1 style="margin-right: 22px; margin-left: 22px;">Come back later and explore my newest projects!</h1>
+    <div class="container-fluid ml-3 mt-3 my-5">
+      <div class="row">
+        <div class="col-md-12 col-12">
+          <div class="row d-flex justify-content-center">
+            <h1 class="text-dark alegreya300 display-1 mr-3">E L I Z A B E T H</h1><h1 class="text-dark alegreya100 display-1">S A S S E M A N</h1>
           </div>
-          <!-- <nav>
-             <ul class="nav">
-             <li class="nav__item"><a href="project01.html">Hell Week App</a></li>
-             <li class="nav__item"><a href="project02.html">Spotify Link Feature</a></li>
-             <li class="nav__item"><a href="project03.html">Legal App Platform</a></li>
-             </ul>
-           </nav> -->
+        </div>
+      </div>
     </div>
 
 
-<!-- content -->
 
-    <div class= "right">
-        <div class="block01">
-          <div class="headings">
-            Elizabeth Sasseman
-          </div>
-          </br><div class="content">
-            Currently: User Interface Designer & Front End Developer.
-          </div>
-        </br><p>Skilled at taking ideas from design to prototype. Incredibly motivated by innovative collaboration, freedom to invent and brainstorm, and passionate people who think outside the box. Experience working as a team with UI & UX designers, engineers, product developers, and tech writers. Daily work in an iterative Agile environment with Adobe products, building prototypes, assisting in UX testing, presenting ideas, and refining designs. Also a skilled photographer and inventor with endless ideas. Always working on several side projects and small business ideas.</p>
+    <div id="tabs" class="container-fluid px-0">
+      <div class="row">
+        <div class="col-xs-12 col-12">
+          <nav>
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Portfolio</a>
+              <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">An Experience</a>
+              <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+            </div>
+          </nav>
         </div>
-
-
-
-
-
-        <div class= "block05">
-            <img src="userexperiences.png" width="33.33%" alt="user experience"/><img src="visualdesigns.png" width="33.33%" alt="visual design"/><img src="productdevelopment.png" width="33.33%" alt="product development"/>
-        </div>
-
-
-
-
-
-        <div class= "block09">
-            </br><p>I throw myself into everything I love. I am most fulfilled when exploring the outdoors by traveling, trail running or rock climbing and when stimulating my mind by reading, learning or brainstorming. There is so much I would love to explore and become skilled at. Part of why UX is so exciting to me is because the amount of skills left to acquire and the number of problems left to solve are just as endless and compelling as the unexplored places and books I love.
-        </div>
-
-
-
-<!--
-
-
-
-        <div class= "block04">
-          <div class="headings">
-            My Process
-          </div>
-          </br></br>
-          <img src="Process.png" width=100% alt="my process graphic"/>
-        </div>
-
-
-
-
-
-
-
-        <div class= "block03">
-          <div class="headings">
-            My Skills
-          </div>
-          </br></br>
-          <img src="Skills.png" width=70% alt="my skills graphic"/>
-        </div>
-
-
-
--->
-
-
-        <div class= "block08">
-            <a href="resume.pdf"><img src="resume.png" width="20%" alt="click here for resume button"/></a>
-        </div>
-
-
-
-
-
-<!--
-
-
-
-        <div class= "block03">
-          <div class="content">
-            My abilities don't end with my user experiences...
-          </div>
-            </br>Learn more about me as a creative professional through my photography <a href="https://elizabethsasseman.wixsite.com/photography">here.</a>
-        </div>
-
-
--->
-
-
-
-
-          <!-- <div class="footer">
-            Website design, content and design-related imagery by: Elizabeth Sasseman </br> Stock photos from pexels.com
-          </div> -->
       </div>
-  </div>
+    </div>
+    <div id="tabs" class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 ">
+          <div class="tab-content" id="nav-tabContent">
 
 
 
-</body>
+            <!-- Tab 01 -->
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+              <div class="container-fluid bg-dark" id="image" style="padding-left: 0px; padding-right: 0px;">
+                <img src="imgs/leaf_texture.jpg"/ class="img-fluid" style="opacity: 0.2">
+                <div class="row d-flex justify-content-center" id="text">
+                  <div class="col-md-12 col-12">
+                    <h3 class="text-white alegreya100">Elizabeth is a UX|UI Designer & Front-End Developer in Colorado.</h3>
+                    <a href="resume.html"><button type="button" class="btn btn-outline-light btn-lg mt-5">R E S U M E</button></a>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid px-0 mt-5">
+                <div class="row justify-content-center d-flex mb-5">
+                  <div class="col-md-5 col-12 bg-dark py-5">
+                    <h1 class="alegreya300 display-5 mx-5 text-white">Navigating the Wilderness</h1>
+                    <p class="alegreya300 mr-3 text-white mx-5">Showcasing skills in: <strong>UX Design</strong></p>
+                    <p class="alegreya300 mr-3 text-white mx-5">In applying for a job with Gaia, I want to showcase my ability to problem-solve
+                    and come up with some ideas that would help refine the app and make it very user-friendly. The UX part of UX|UI design is all about understanding
+                    users on a personal level. It's important to research, brainstorm, create a story, and then build, test, and refine based on real
+                    data. I have provided some visuals I created using various UX techniques in order to better understand Gaia's potential user
+                    base. Because the purpose of this project is to showcase my UX skills, the research I did was primarily based off of my own
+                    personal thoughts and feelings and the thoughts and feelings of a couple close friends who use the app frequently.</p>
+                    <a href="project_02.html"><button type="button" class="btn btn-outline-light btn-lg mt-3 ml-5">V I E W</button></a>
+                  </div>
+                  <div class="col-md-4 col-12 bg-dark align-items-center justify-content-center d-flex py-5">
+                    <img src="imgs/persona_01.png" style="width: 475px;"/>
+                  </div>
+                </div>
+                <div class="row justify-content-center d-flex mb-5">
+                  <div class="col-md-5 col-12 bg-dark py-5">
+                    <h1 class="alegreya300 display-5 mx-5 text-white">Planning a Leave of Absence</h1>
+                    <p class="alegreya300 mr-3 text-white mx-5">Showcasing skills in: <strong>UI Design</strong></p>
+                    <p class="alegreya300 mr-3 text-white mx-5">This project displays a flow of mockups leading a user to plan a leave of absence from work for a family health condition. Shanti Gupta is our user in this flow and she is planning
+                    a leave of absence for her daughter, Saavni Gupta. Shanti is planning her leave through an absence management portal set up for her through work.
+                    These mockups were created through a collaborative effort on a team of UX|UI designers. The team includes myself and two other individuals. It should be noted that logos
+                    have been removed and information has been made fake in an effort to protect secure information.</p>
+                    <a href="project_01.html"><button type="button" class="btn btn-outline-light btn-lg mt-3 ml-5">V I E W</button></a>
+                  </div>
+                  <div class="col-md-4 col-12 bg-dark align-items-center justify-content-center d-flex py-5">
+                    <img src="imgs/login_splash_spring.png" style="width: 475px;"/>
+                  </div>
+                </div>
+                <div class="row justify-content-center d-flex">
+                  <div class="col-md-5 col-12 bg-dark py-5">
+                    <h1 class="alegreya300 display-5 mx-5 text-white">From Mockup to Prototype</h1>
+                    <p class="alegreya300 mr-3 text-white mx-5">Showcasing skills in: <strong>Front-End Development</strong></p>
+                    <p class="alegreya300 mr-3 text-white mx-5">I am able to build the front-end of websites as well as create prototypes from mockups using
+                    code. This whole portfolio website was built by myself from scratch using Bootstrap 4. Feel free to right-click and inspect my code anywhere
+                    throughout my site.</p>
+                  </div>
+                  <div class="col-md-4 col-12 bg-dark align-items-center justify-content-center d-flex py-5">
+                    <img src="imgs/code.jpg" style="width: 475px;"/>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid px-0 bg-dark mt-5 pb-5">
+                <div class="row justify-content-center d-flex">
+                  <div class="col-lg-10 col-12 bg-dark pt-5 pb-3">
+                    <h1 class="alegreya300 display-5 ml-5 text-white">Bio</h1>
+                    <p class="alegreya300 text-white mx-5">I was born and raised in Indiana, and moved out the Colorado the minute
+                    I graduated from Indiana University. I couldn't think of anything except the beautiful mountains I wanted to spend
+                    forever exploring. I grew up trying every sport I could, but rock climbing and trail running were the two big ones that
+                    stuck. Since moving to Colorado I've also gotten more into alpine climbing, downhill skiing, nordic skiing, and mountain biking. I spent a few
+                    years running long ultra-distance races, and although I'm still psyched on the occasional big race, my heart is drawn more
+                    and more to off-trail adventures up lesser-known mountains.</p>
+                    <p class="alegreya300 text-white mx-5">Aside from my strong desire to be outdoors in beautiful and wild places is my
+                    intellectual desires. The older I get, the more amazed I am at the human ability to learn and to teach oneself. Most of the
+                    books I read are non-fiction and with the purpose of learning something. I love to think, analyze and brainstorm. I think of
+                    myself as a designer at my core, inside and outside of work. I have a list of product ideas and business ideas that I keep
+                    tucked away, and am currently working on a couple of them for fun on the side. I would not be myself without intellectual
+                    stimulation. I am a very creative person but I am also a very analytical person, and I think the combination is what makes
+                    me a designer. My interest in UX design doesn't end with technology. I spend time considering the impact of applying the principles
+                    of UX design to all areas of life, such as with interior living spaces, cooking and eating foods, and in the development of physical products.</p>
+                    <p class="alegreya300 text-white mx-5">Professionally, I am skilled at taking ideas from design to prototype. I am incredibly motivated by innovative collaboration,
+                    the freedom to invent and brainstorm, and by passionate people who think outside the box. I have experience working on a team of UX and UI designers, and with engineers,
+                    product developers, and tech writers. I have experience working in an iterative Agile environment where I spend time doing UX research, building prototypes, user
+                    testing, presenting ideas, and refining designs. I am also a skilled photographer with a keen eye.</p>
+                    <p class="alegreya300 text-white mx-5">I am happy and whole when pushing the physical and intellectual pieces of who I am, as far as
+                    I possibly can. Below are a few photos of me in my element.</p>
+                  </div>
+                </div>
+                <div class="row justify-content-center d-flex mx-5">
+                  <div class="col-md-4 col-12 bg-dark align-items-center justify-content-center d-flex my-3">
+                    <img src="imgs/me_01.jpg" style="width: 375px;"/>
+                  </div>
+                  <div class="col-md-4 col-12 bg-dark align-items-center justify-content-center d-flex my-3">
+                    <img src="imgs/me_02.jpg" style="width: 375px;"/>
+                  </div>
+                  <div class="col-md-4 col-12 bg-dark align-items-center justify-content-center d-flex my-3">
+                    <img src="imgs/me_03.jpg" style="width: 375px;"/>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid px-0">
+                <div class="row pt-5 justify-content-center d-flex mb-3">
+                  <div class="col-md-9 col-12">
+                  <h1 class="alegreya300 display-5 mr-3">Experience</h1>
+                  </div>
+                </div>
+                <div class="row justify-content-center d-flex">
+                  <div class="col-md-9 col-12 bg-dark pt-5">
+                    <h3 class="alegreya500 ml-5 display-5 text-white">Guardian Life</h3>
+                  </div>
+                </div>
+                <div class="row justify-content-center d-flex">
+                  <div class="col-md-9 col-12 bg-dark">
+                    <h5 class="alegreya300 ml-5 display-5 text-white">UX|UI Designer</h5>
+                  </div>
+                </div>
+                <div class="row justify-content-center d-flex">
+                  <div class="col-md-3 col-12 bg-dark">
+                    <p class="alegreya300 mr-3 text-white ml-5">May 2019 - present</p>
+                  </div>
+                  <div class="col-md-6 col-12 bg-dark pb-5">
+                    <p class="alegreya300 mr-3 text-white ml-5">Work on an Agile and Kanban team, attend all Agile meetings and ceremonies, and complete work via User Stories within Sprints.
+                      Consistently work on developing and refining mockups for presentation to product owners, account executives and for use in user testing. Build prototypes from mockups as needed
+                      and present work using personas to tell a story. Develop user test scripts, perform user tests, compile data, and present findings. Create journey maps, user flows,
+                      personas, and do extensive research.</p>
+                  </div>
+                </div>
+                <div class="row justify-content-center d-flex mt-5">
+                  <div class="col-md-9 col-12 bg-dark pt-5">
+                    <h3 class="alegreya500 ml-5 display-5 text-white">ReedGroup</h3>
+                  </div>
+                </div>
+                <div class="row justify-content-center d-flex">
+                  <div class="col-md-9 col-12 bg-dark">
+                    <h5 class="alegreya300 ml-5 display-5 text-white">UI Designer & Frontend Developer</h5>
+                  </div>
+                </div>
+                <div class="row justify-content-center d-flex">
+                  <div class="col-md-3 col-12 bg-dark">
+                    <p class="alegreya300 mr-3 text-white ml-5">April 2018 - May 2019</p>
+                  </div>
+                  <div class="col-md-6 col-12 bg-dark pb-5">
+                    <p class="alegreya300 mr-3 text-white ml-5">Learned and began working as an Agile and Kanban team as the company implemented it across the software and technology department.
+                    Attended all Agile meetings and ceremonies and completed work via User Stories within Sprints. Did a significant amount of work on refining our internal design style guide using Bootstrap. Also implemented
+                    a new way of defining our design's spacing guidelines to developers (see project x). Consistently worked on developing and refining mockups for presentation to product owners, account executives
+                    and for use in user testing. Built prototypes from mockups as needed and presented work using personas to tell a story. Assisted in user testing and user research.</p>
+                  </div>
+                </div>
+                <div class="row justify-content-center d-flex mt-5">
+                  <div class="col-md-9 col-12 bg-dark pt-5">
+                    <h3 class="alegreya500 ml-5 display-5 text-white">The Rolland Group</h3>
+                  </div>
+                </div>
+                <div class="row justify-content-center d-flex">
+                  <div class="col-md-9 col-12 bg-dark">
+                    <h5 class="alegreya300 ml-5 display-5 text-white">Visual Designer</h5>
+                  </div>
+                </div>
+                <div class="row justify-content-center d-flex">
+                  <div class="col-md-3 col-12 bg-dark">
+                    <p class="alegreya300 mr-3 text-white ml-5">July 2016 - March 2018</p>
+                  </div>
+                  <div class="col-md-6 col-12 bg-dark pb-5">
+                    <p class="alegreya300 mr-3 text-white ml-5">Helped implement design into this small startup company. Revised existing print graphics to meet current design standards. Designed email campaigns via MailChimp and HTML. Design web-based and print graphics.
+                    Worked directly with the marketing team to create content for advertising that would work well with email and graphic designs.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid ml-3 mb-5 mt-3">
+                <div class="row">
+                  <div class="col-md-12 col-12">
+                    <div class="row d-flex justify-content-start ml-3">
+                      <a href="#"><i class="fas fa-long-arrow-alt-up fa-2x" style="color: #b3b3b3;"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <!-- Tab 02 -->
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+              <div class="container-fluid bg-dark" id="image" style="padding-left: 0px; padding-right: 0px;">
+                <img src="imgs/paint_texture.jpg"/ class="img-fluid" style="opacity: 0.2">
+                <div class="row d-flex justify-content-center" id="text">
+                  <div class="col-md-12 col-12">
+                    <h3 class="text-white alegreya100">Elizabeth follows a user-centered approach in life and design.</h3>
+                    <i class="fas fa-users-cog fa-3x mt-3" style="color: white"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid px-0 mt-5">
+                <div class="row justify-content-center d-flex mb-5">
+                  <div class="col-md-5 col-12 bg-dark pt-5">
+                    <h1 class="alegreya300 display-5 mx-5 text-white">"User-Centered Design</h1>
+                    <p class="alegreya300 mr-3 text-white mx-5">is a framework of processes (not restricted to interfaces or technologies)
+                      in which usability goals, user characteristics, environment, tasks and workflow of a product, service or process are
+                      given extensive attention at each stage of the design process. User-centered design can be characterized as a
+                      multi-stage problem-solving process that not only requires designers to analyze and envision the way users are
+                      likely to consume a product, but also to validate their assumptions with regard to the user behavior in real world
+                      tests. User-centered design tries to optimize the product around how users can, want, or need to use the product,
+                      rather than forcing the users to change their behavior to accommodate the product." | Wikipedia</p>
+                  </div>
+                  <div class="col-md-4 col-12 bg-dark align-items-center justify-content-center d-flex py-5">
+                    <img src="imgs/wireframe.jpg" style="width: 475px;"/>
+                  </div>
+                </div>
+                <div class="row justify-content-center d-flex mb-5">
+                  <div class="col-md-5 col-12 bg-dark pt-5">
+                    <h1 class="alegreya300 display-5 mx-5 text-white">Applying This</h1>
+                    <p class="alegreya300 mr-3 text-white mx-5">Elizabeth believes incredible user experiences are largely due
+                    to a designers understanding of the psychology of what people want. Designs have to come from a place of authenticity,
+                    open-mindedness, and creative problem-solving. Great designers are inventive and able to ask, "Why not?" over and over
+                    again. The same solution does not always work for different scenarios and sometimes the most important thing is to step
+                    back and take a look at the big picture. There might not be an ideal solution when everyone is working within the
+                    constraints of bad website architecture or a lack of user understanding. Great designers put the user first and work hard to understand his or her
+                    needs, desires, fears, struggles, and thoughts. Users are people, and the best designers can do is continually remember this.</p>
+                  </div>
+                  <div class="col-md-4 col-12 bg-dark align-items-center justify-content-center d-flex py-5">
+                    <img src="imgs/leaf.jpg" style="width: 475px;"/>
+                  </div>
+                </div>
+                <div class="row justify-content-center d-flex">
+                  <div class="col-md-5 col-12 bg-dark pt-5">
+                    <h1 class="alegreya300 display-5 mx-5 text-white">A Student of User Experiences</h1>
+                    <p class="alegreya300 mr-3 text-white mx-5">Elizabeth is continually curious and invested in learning and understanding user experiences. Her particular areas of interest include more than just designing experiences with technology. Below are a few additional ways her curiosity around UX is peaked:</p>
+                    <ul class="alegreya300 mr-3 text-white ml-3">
+                      <li>How people interact with spaces and objects within a house</li>
+                      <li>The visual and sensory experience of food</li>
+                      <li>The ergonomics and design of physical products</li>
+                    </ul></p>
+                  </div>
+                  <div class="col-md-4 col-12 bg-dark align-items-center justify-content-center d-flex py-5">
+                    <img src="imgs/architecture.jpg" style="width: 475px;"/>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid bg-dark mt-5" id="image" style="padding-left: 0px; padding-right: 0px;">
+                <img src="imgs/bedroom.jpg"/ class="img-fluid" style="opacity: 0.2">
+                <div class="row d-flex justify-content-center" id="text">
+                  <div class="col-md-12 col-12">
+                    <h5 class="text-white alegreya100 mt-3">Elizabeth has spent time studying architecture and interior design in order to apply the process of UX design to the process of moving into and living inside a home.</h5>
+                    <!-- <a href="imgs/resume.pdf"><button type="button" class="btn btn-outline-light btn-lg mt-5">E X P L O R E</button></a> -->
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid bg-dark" id="image" style="padding-left: 0px; padding-right: 0px;">
+                <img src="imgs/pizza.jpg"/ class="img-fluid" style="opacity: 0.2">
+                <div class="row d-flex justify-content-center" id="text">
+                  <div class="col-md-12 col-12">
+                    <h5 class="text-white alegreya100 mt-3">Elizabeth loves to experiment with food while cooking. She has recently begun exploring how UX can be applied to the art of cooking, arranging, and consuming food.</h5>
+                    <!-- <a href="imgs/resume.pdf"><button type="button" class="btn btn-outline-light btn-lg mt-5">E X P L O R E</button></a> -->
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid bg-dark" id="image" style="padding-left: 0px; padding-right: 0px;">
+                <img src="imgs/build.jpg"/ class="img-fluid" style="opacity: 0.2">
+                <div class="row d-flex justify-content-center" id="text">
+                  <div class="col-md-12 col-12">
+                    <h5 class="text-white alegreya100 mt-3">Elizabeth is always curious about how things work. She is very mechanically-minded, has keen spatial abilities, and loves to fix things. All of this draws her to the art of developing physical products.</h5>
+                    <!-- <a href="imgs/resume.pdf"><button type="button" class="btn btn-outline-light btn-lg mt-5">E X P L O R E</button></a> -->
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+
+
+
+
+
+
+            <!-- Tab 03 -->
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+              <div class="container-fluid bg-dark" id="image" style="padding-left: 0px; padding-right: 0px;">
+                <img src="imgs/rock_texture.jpeg"/ class="img-fluid" style="opacity: 0.2">
+                <div class="row d-flex justify-content-center" id="text">
+                  <div class="col-md-12 col-12">
+                    <p><a href="mailto:elizabethsasseman@gmail.com"><button type="button" class="btn btn-outline-light btn-lg">E M A I L</button></a></p>
+                    <h3 class="text-white alegreya100 mt-3">3 1 7 . 2 1 9 . 9 4 5 6</h3>
+                    <a href="https://www.linkedin.com/in/elizabethsasseman/"><i class="fab fa-linkedin fa-2x mt-3" style="color: white;"></i></a>
+                    <a href="https://www.instagram.com/elizabethsasseman/"><i class="fab fa-instagram fa-2x mt-3 ml-3" style="color: white;"></i></a>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+
+
+
+            <!-- Tab 04 -->
+            <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+              [Tab Content for Support]
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  </body>
 </html>
